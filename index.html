@@ -3,248 +3,304 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>弱电常用工具下载站</title>
+    <title>弱电常用工具下载站2.0</title>
     <style>
         * {
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:system-ui, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", system-ui, sans-serif;
         }
-        body{
-            background:#f3f4f6;
-            color:#222;
-            padding:20px;
+        body {
+            background-color: #f8fafc;
+            padding: 40px 20px;
         }
-        .container{
-            max-width:1100px;
-            margin:0 auto;
+        .container {
+            max-width: 1450px;
+            margin: 0 auto;
         }
-        header{
-            background:#1f2937;
-            color:#fff;
-            padding:30px;
+        .page-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        h1 {
+            color: #1e293b;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #64748b;
+            font-size:16px;
+        }
+        .grid-box {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap:22px;
+        }
+        .card {
+            background:#ffffff;
             border-radius:12px;
-            margin-bottom:24px;
+            padding:24px 20px;
+            border:1px solid #e2e8f0;
+            transition: all 0.28s ease;
         }
-        header h1{
-            font-size:28px;
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+            border-color:#cbd5e1;
+        }
+        .card h3 {
+            font-size:17px;
+            color:#1e293b;
             margin-bottom:8px;
         }
-        header p{
-            color:#cbd5e1;
-        }
-        .notice{
-            background:#fffbeb;
-            border-left:4px solid #f59e0b;
-            padding:16px;
-            border-radius:8px;
-            margin-bottom:24px;
-        }
-        .grid{
-            display:grid;
-            grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
-            gap:20px;
-        }
-        .card{
-            background:#fff;
-            padding:20px;
-            border-radius:10px;
-            box-shadow:0 2px 8px #00000010;
-        }
-        .card h3{
-            margin-bottom:8px;
-            color:#111827;
-        }
-        .card .desc{
-            color:#555;
-            font-size:14px;
-            margin-bottom:16px;
+        .desc {
+            font-size:13px;
+            color:#64748b;
             min-height:40px;
+            line-height:1.5;
+            margin-bottom:12px;
         }
-        .btn{
-            display:inline-block;
-            background:#2563eb;
+        .info-line {
+            font-size:12px;
+            color:#94a3b8;
+            display:flex;
+            gap:12px;
+            margin-bottom:16px;
+        }
+        .download-btn {
+            display:block;
+            text-align:center;
+            background:#3b82f6;
             color:#fff;
             text-decoration:none;
-            padding:8px 16px;
-            border-radius:6px;
-        }
-        .btn:hover{
-            background:#1d4ed8;
-        }
-        footer{
-            margin-top:40px;
-            text-align:center;
-            color:#666;
+            padding:9px 0;
+            border-radius:7px;
             font-size:14px;
+            transition:0.25s;
+        }
+        .download-btn:hover {
+            background:#2563eb;
+        }
+        /*响应式布局*/
+        @media(max-width:1200px){
+            .grid-box{grid-template-columns: repeat(3,1fr);}
+        }
+        @media(max-width:768px){
+            .grid-box{grid-template-columns: repeat(2,1fr);}
+        }
+        @media(max-width:480px){
+            .grid-box{grid-template-columns: repeat(1,1fr);}
+        }
+        .footer {
+            margin-top:60px;
+            text-align:center;
+            color:#64748b;
+            font-size:13px;
+            line-height:1.6;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>弱电常用工具下载站</h1>
+        <div class="page-header">
+            <h1>弱电常用工具下载站2.0</h1>
             <h1>服务器由尧提供维护</h1>
-        </header>
-
-        <div class="notice">
-            <strong>⚠️ 免责提示：</strong>本站仅收集整理弱电行业常用工具，请使用正版软件。请勿下载破解固件、盗版程序，工具仅供工程调试学习使用。
-        </div>
-
-        <div class="grid">
+            </div>
+        <div class="grid-box">
+            <!-- 第1行 6个 -->
             <div class="card">
                 <h3>向日葵远程控制精简版</h3>
-                <div class="desc">向日葵远程控制精简版</div>
-                <a href="https://pinco.seewo.com/s/221a3b9884184a9e8c679c248dca53cb" class="btn">下载</a>
+                <p class="desc">向日葵远程控制精简版</p>
+                <div class="info-line"><span></span><span>21.58MB</span></div>
+                <a href="https://pinco.seewo.com/s/bed632319faa4d41a2c89941f2f34430" class="download-btn">立即下载</a>
             </div>
             <div class="card">
                 <h3>向日葵远程控制完整版</h3>
-                <div class="desc">向日葵远程控制完整版</div>
-                <a href="https://pinco.seewo.com/s/8f8f6e8256474879b09187e3b52a56ad#打开链接，下载我所分享的文件吧" class="btn">下载</a>
+                <p class="desc">向日葵远程控制完整版</p>
+                <div class="info-line"><span></span><span>153.58MB</span></div>
+                <a href="https://pinco.seewo.com/s/8f8f6e8256474879b09187e3b52a56ad" class="download-btn">立即下载</a>
             </div>
             <div class="card">
                 <h3>uu远程精简版</h3>
-                <div class="desc">uu远程精简版</div>
-                <a href="https://pinco.seewo.com/s/c52122630cb640f49b1026137f7b8f4f#打开链接，下载我所分享的文件吧" class="btn">下载</a>
+                <p class="desc">uu远程精简版</p>
+                <div class="info-line"><span></span><span>55.48MB</span></div>
+                <a href="https://pinco.seewo.com/s/c52122630cb640f49b1026137f7b8f4f" class="download-btn">立即下载</a>
+            </div>
+            <div class="card">
+                <h3>uu远程完整版</h3>
+                <p class="desc">uu远程完整版</p>
+                <div class="info-line"><span></span><span>MB</span></div>
+                <a href="填写你的文件地址" class="download-btn">立即下载</a>
+            </div>
+            <div class="card">
+                <h3>todesk精简版</h3>
+                <p class="desc">todesk精简版</p>
+                <div class="info-line"><span></span><span>16.37MB</span></div>
+                <a href="https://pinco.seewo.com/s/df869a39b32a4c61afb91b5f212c26db" class="download-btn">立即下载</a>
             </div>
             <div class="card">
                 <h3>todesk完整版</h3>
-                <div class="desc">todesk完整版</div>
-                <a href="https://pinco.seewo.com/s/a556605b4284417faf92f5aebd3a603c#打开链接，下载我所分享的文件吧" class="btn">下载</a>
+                <p class="desc">todesk完整版</p>
+                <div class="info-line"><span></span><span>178.08MB</span></div>
+                <a href="https://pinco.seewo.com/s/a556605b4284417faf92f5aebd3a603c" class="download-btn">立即下载</a>
+            </div>
+
+            <!-- 第2行 6个 -->
+            <div class="card">
+                <h3>firpe 1.9.3</h3>
+                <p class="desc">由蔷薇技术提供</p>
+                <div class="info-line"><span>v1.93</span><span>1.16GB</span></div>
+                <a href="https://pinco.seewo.com/s/ddc1ece33f42487bb9ba94916346875d" class="download-btn">立即下载</a>
             </div>
             <div class="card">
-                <h3>firpe 1.9.3由蔷薇技术提供</h3>
-                <div class="desc">firpe 1.9.3由蔷薇技术提供</div>
-                <a href="https://pinco.seewo.com/s/ddc1ece33f42487bb9ba94916346875d" class="btn">下载</a>
-            </div>
-            <div class="card">
-                <h3>EasyRC一键装机V3.8.15.0_完整离线版 </h3>
-                <div class="desc">EasyRC一键装机V3.8.15.0_完整离线版 </div>
-                <a href="https://pinco.seewo.com/s/5e740a99309943d7a4cabead348615bb" class="btn">下载</a>
+                <h3>EasyRC完整离线版 </h3>
+                <p class="desc">EasyRC完整离线版 </p>
+                <div class="info-line"><span></span><span>1015.62MB</span></div>
+                <a href="https://pinco.seewo.com/s/5e740a99309943d7a4cabead348615bb" class="download-btn">立即下载</a>
             </div>
             <div class="card">
                 <h3>驱动总裁</h3>
-                <div class="desc">跳转驱动总裁官网下载</div>
-                <a href="https://www.sysceo.com/" class="btn">跳转</a>
+                <p class="desc">跳转驱动总裁官网下载www.sysceo.com</p>
+                <div class="info-line"><span></span><span>官网</span></div>
+                <a href="https://www.sysceo.com/" class="download-btn">立即跳转</a>
             </div>
             <div class="card">
-                <h3>图吧工具箱 v2026.08 硬件检测工具合集</h3>
-                <div class="desc">图吧工具箱，硬件检测工具合集跳转爱纯净官网下载</div>
-                <a href="https://www.lanzouo.com/b0cxxe5kd" class="btn">跳转</a>
-            </div>
-            <div class="card">
-                <h3>海康设备网络搜索</h3>
-                <div class="desc">支持设备发现、激活、网络配置、重置密码</div>
-                <a href="https://pinco.seewo.com/s/3c9412f86b45499b864e51b856277150#打开链接，下载我所分享的文件吧" class="btn">下载</a>
-            </div>
-            <div class="card">
-                <h3>海康交付助手</h3>
-                <div class="desc">集成SADP功能支持设备发现、激活、网络配置、设备巡检等</div>
-                <a href="https://pinco.seewo.com/s/4adeb67a87ca43268e287407fcf0d473#打开链接，下载我所分享的文件吧" class="btn">下载</a>
-            </div>
-            <div class="card">
-                <h3>海康400密码重置助手</h3>
-                <div class="desc">海康400密码重置助手</div>
-                <a href="https://pinco.seewo.com/s/282638e478664e3dbab8c10c2964d610#打开链接，下载我所分享的文件吧" class="btn">下载</a>
-            </div>
-            <div class="card">
-                <h3>iVMS-4200系列</h3>
-                <div class="desc">iVMS-4200系列</div>
-                <a href="https://pinco.seewo.com/s/65d6d006bef240fb9863fb4e97d06d42#打开链接，下载我所分享的文件吧" class="btn">下载</a>
-                 </div>
-            <div class="card">
-                <h3>ConfigTool（易安装电脑版）</h3>
-                <div class="desc">ConfigTool（易安装电脑版）</div>
-                <a href="https://pinco.seewo.com/s/6f95afe852a94a5e945659c6a0bf06ff#打开链接，下载我所分享的文件吧" class="btn">下载</a>
-            </div>
-            <div class="card">
-                <h3>SmartPSS+Plus</h3>
-                <div class="desc">SmartPSS+Plus</div>
-                <a href="https://pinco.seewo.com/s/cd0f6b3c38e84f17bb51fbfbd0aec39b#打开链接，下载我所分享的文件吧" class="btn">下载</a>
-            </div>
-            <div class="card">
-                <h3>大华云联（电脑端）</h3>
-                <div class="desc">大华云联（电脑端）</div>
-                <a href="https://pinco.seewo.com/s/62f55d81028845168c420b4f8464f62e#打开链接，下载我所分享的文件吧" class="btn">下载</a>
-            </div>
-            <div class="card">
-                <h3>EZStation视频管理软件</h3>
-                <div class="desc">EZStation视频管理软件</div>
-                <a href="https://pinco.seewo.com/s/f84e742f778f43b8a697806b8d3b017b#打开链接，下载我所分享的文件吧" class="btn">下载</a>
-                 </div>
-            <div class="card">
-                <h3>VMS-6100_x64_setup</h3>
-                <div class="desc">VMS-6100_x64_setup</div>
-                <a href="https://pinco.seewo.com/s/8d53e8379f9c411db4ff93f313c3893d#打开链接，下载我所分享的文件吧" class="btn">下载</a>
-            </div>
-            <div class="card">
-                <h3>Seetong_x32</h3>
-                <div class="desc">Seetong_x32</div>
-                <a href="https://pinco.seewo.com/s/3c71661748c64ad5901d214029db8618#打开链接，下载我所分享的文件吧" class="btn">下载</a>
-            </div>
-            <div class="card">
-                <h3>Seetong_x64</h3>
-                <div class="desc">Seetong_x64</div>
-                <a href="https://pinco.seewo.com/s/7fd7c62e56ba4409b4efcc92f75fc51f#打开链接，下载我所分享的文件吧" class="btn">下载</a>
-            </div>
-            <div class="card">
-                <h3>EzvizStudioSetups</h3>
-                <div class="desc">EzvizStudioSetups</div>
-                <a href="https://pinco.seewo.com/s/42fe468931af4440824cc85ba0d3df39#打开链接，下载我所分享的文件吧" class="btn">下载</a>
-             </div>
-            <div class="card">
-                <h3>uu远程精简版</h3>
-                <div class="desc">uu远程精简版</div>
-                <a href="https://pinco.seewo.com/s/c52122630cb640f49b1026137f7b8f4f#打开链接，下载我所分享的文件吧" class="btn">下载</a>
-            </div>
-            <div class="card">
-                <h3>抓包工具Wireshark 64位</h3>
-                <div class="desc">抓包工具Wireshark 64位</div>
-                <a href="https://pinco.seewo.com/s/71499ec9d5bb499bba3889ba83eaf321#打开链接，下载我所分享的文件吧" class="btn">下载</a>
-            </div>
-            <div class="card">
-                <h3>科来IP MAC地址扫描器</h3>
-                <div class="desc">科来IP MAC地址扫描器</div>
-                <a href="https://pinco.seewo.com/s/128282f61ec940c4a02eca539c7df518#打开链接，下载我所分享的文件吧" class="btn">下载</a>
+                <h3>图吧工具箱 </h3>
+                <p class="desc">硬件检测工具合集</p>
+                <div class="info-line"><span></span><span>官网</span></div>
+                <a href="https://www.lanzouo.com/b0cxxe5kd" class="download-btn">立即跳转</a>
             </div>
             <div class="card">
                 <h3>360kdcs（宽带测速）</h3>
-                <div class="desc">360kdcs（宽带测速）</div>
-                <a href="https://pinco.seewo.com/s/72bb74f3bb8943c18abf5172d0ca2b45#打开链接，下载我所分享的文件吧" class="btn">下载</a>
-                </div>
-            <div class="card">
-                <h3>1VMS-6100_x64_setup</h3>
-                <div class="desc">VMS-6100_x64_setup</div>
-                <a href="https://pinco.seewo.com/s/8d53e8379f9c411db4ff93f313c3893d#打开链接，下载我所分享的文件吧" class="btn">下载</a>
+                <p class="desc">360kdcs（宽带测速）</p>
+                <div class="info-line"><span></span><span>4.92MB</span></div>
+                <a href="https://pinco.seewo.com/s/72bb74f3bb8943c18abf5172d0ca2b45" class="download-btn">立即下载</a>
             </div>
             <div class="card">
-                <h3>2Seetong_x32</h3>
-                <div class="desc">Seetong_x32</div>
-                <a href="https://pinco.seewo.com/s/3c71661748c64ad5901d214029db8618#打开链接，下载我所分享的文件吧" class="btn">下载</a>
+                <h3>门禁地址码计算器</h3>
+                <p class="desc">485门禁设备地址换算工具</p>
+                <div class="info-line"><span>v1.1</span><span>0.7MB</span></div>
+                <a href="填写你的文件地址" class="download-btn">立即下载</a>
+            </div>
+
+            <!-- 第3行 6个 -->
+            <div class="card">
+                <h3>海康设备网络搜索</h3>
+                <p class="desc">海康设备网络搜索</p>
+                <div class="info-line"><span></span><span>68.66MB</span></div>
+                <a href="https://pinco.seewo.com/s/3c9412f86b45499b864e51b856277150" class="download-btn">立即下载</a>
             </div>
             <div class="card">
-                <h3>3Seetong_x64</h3>
-                <div class="desc">Seetong_x64</div>
-                <a href="https://pinco.seewo.com/s/7fd7c62e56ba4409b4efcc92f75fc51f#打开链接，下载我所分享的文件吧" class="btn">下载</a>
+                <h3>海康交付助手</h3>
+                <p class="desc">集成SADP功能支持</p>
+                <div class="info-line"><span></span><span>111.01MB</span></div>
+                <a href="https://pinco.seewo.com/s/4adeb67a87ca43268e287407fcf0d473" class="download-btn">立即下载</a>
             </div>
             <div class="card">
-                <h3>4EzvizStudioSetups</h3>
-                <div class="desc">EzvizStudioSetups</div>
-                <a href="https://pinco.seewo.com/s/42fe468931af4440824cc85ba0d3df39#打开链接，下载我所分享的文件吧" class="btn">下载</a>
-                </div>
+                <h3>海康400密码重置助手</h3>
+                <p class="desc">海康400密码重置助手</p>
+                <div class="info-line"><span></span><span>25.85MB</span></div>
+                <a href="https://pinco.seewo.com/s/282638e478664e3dbab8c10c2964d610" class="download-btn">立即下载</a>
+            </div>
+            <div class="card">
+                <h3>iVMS-4200</h3>
+                <p class="desc">iVMS-4200系列</p>
+                <div class="info-line"><span></span><span>294.57MB</span></div>
+                <a href="https://pinco.seewo.com/s/65d6d006bef240fb9863fb4e97d06d42" class="download-btn">立即下载</a>
+            </div>
+            <div class="card">
+                <h3>海康互联</h3>
+                <p class="desc">海康互联</p>
+                <div class="info-line"><span></span><span>494.62MB</span></div>
+                <a href="https://pinco.seewo.com/s/57232af7f9f64f819f11e0c79d59f28d" class="download-btn">立即下载</a>
+            </div>
+            <div class="card">
+                <h3>EzvizStudioSetups</h3>
+                <p class="desc">EzvizStudioSetups</p>
+                <div class="info-line"><span></span><span>65.54MB</span></div>
+                <a href="https://pinco.seewo.com/s/42fe468931af4440824cc85ba0d3df39" class="download-btn">立即下载</a>
+            </div>
+
+            <!-- 第4行 6个 -->
+            <div class="card">
+                <h3>ConfigTool</h3>
+                <p class="desc">（易安装电脑版）</p>
+                <div class="info-line"><span></span><span>34.34MB</span></div>
+                <a href="https://pinco.seewo.com/s/6f95afe852a94a5e945659c6a0bf06ff" class="download-btn">立即下载</a>
+            </div>
+            <div class="card">
+                <h3>SmartPSS+Plus</h3>
+                <p class="desc">SmartPSS+Plus</p>
+                <div class="info-line"><span></span><span>227.82MB</span></div>
+                <a href="https://pinco.seewo.com/s/cd0f6b3c38e84f17bb51fbfbd0aec39b" class="download-btn">立即下载</a>
+            </div>
+            <div class="card">
+                <h3>大华云联（电脑端）</h3>
+                <p class="desc">大华云联（电脑端）</p>
+                <div class="info-line"><span></span><span>336.31MB</span></div>
+                <a href="https://pinco.seewo.com/s/62f55d81028845168c420b4f8464f62e" class="download-btn">立即下载</a>
+            </div>
+            <div class="card">
+                <h3>EZStation</h3>
+                <p class="desc">EZStation视频管理软件</p>
+                <div class="info-line"><span></span><span>148.75MB</span></div>
+                <a href="https://pinco.seewo.com/s/f84e742f778f43b8a697806b8d3b017b" class="download-btn">立即下载</a>
+            </div>
+            <div class="card">
+                <h3>VMS-6100_x64</h3>
+                <p class="desc">VMS-6100_x64</p>
+                <div class="info-line"><span></span><span>176.89MB</span></div>
+                <a href="https://pinco.seewo.com/s/8d53e8379f9c411db4ff93f313c3893d" class="download-btn">立即下载</a>
+            </div>
+            <div class="card">
+                <h3>POE功率计算器</h3>
+                <p class="desc">POE交换机负载功率核算</p>
+                <div class="info-line"><span>v2.2</span><span>1.4MB</span></div>
+                <a href="填写你的文件地址" class="download-btn">立即下载</a>
         </div>
 
-        <footer>
-            <p>弱电工程工具库 ©2026 | 仅工程学习，商用请获取软件官方授权</p>
-        </footer>
-    </div>
-</body>
-</html>
-
-            
-
-        </footer>
+                    <!-- 第5行 6个 -->
+            <div class="card">
+                <h3>Seetong_x32</h3>
+                <p class="desc">Seetong_x32</p>
+                <div class="info-line"><span></span><span>72.96MB</span></div>
+                <a href="https://pinco.seewo.com/s/3c71661748c64ad5901d214029db8618" class="download-btn">立即下载</a>
+            </div>
+            <div class="card">
+                <h3>Seetong_x64</h3>
+                <p class="desc">Seetong_x64</p>
+                <div class="info-line"><span></span><span>59.45MB</span></div>
+                <a href="https://pinco.seewo.com/s/7fd7c62e56ba4409b4efcc92f75fc51f" class="download-btn">立即下载</a>
+            </div>
+            <div class="card">
+                <h3>Wireshark 64位</h3>
+                <p class="desc">抓包工具Wireshark 64位</p>
+                <div class="info-line"><span></span><span>82.37MB</span></div>
+                <a href="https://pinco.seewo.com/s/71499ec9d5bb499bba3889ba83eaf321" class="download-btn">立即下载</a>
+            </div>
+            <div class="card">
+                <h3>科来IP地址扫描器</h3>
+                <p class="desc">科来IP MAC地址扫描器</p>
+                <div class="info-line"><span></span><span>93.99MB</span></div>
+                <a href="https://pinco.seewo.com/s/128282f61ec940c4a02eca539c7df518" class="download-btn">立即下载</a>
+            </div>
+            <div class="card">
+                <h3>时间同步工具</h3>
+                <p class="desc">NVR、摄像头校时工具</p>
+                <div class="info-line"><span>v1.6</span><span>2.2MB</span></div>
+                <a href="填写你的文件地址" class="download-btn">立即下载</a>
+            </div>
+            <div class="card">
+                <h3>POE功率计算器</h3>
+                <p class="desc">POE交换机负载功率核算</p>
+                <div class="info-line"><span>v2.2</span><span>1.4MB</span></div>
+                <a href="填写你的文件地址" class="download-btn">立即下载</a>
+        </div>
+        </div>
+        <div class="footer">
+            <p>⚠️免责声明：本站工具仅供弱电技术学习交流使用，请使用合法原版软件，版权归原作者所有，请勿商用侵权。</p>
+        </div>
     </div>
 </body>
 </html>
